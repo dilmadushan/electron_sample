@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset = "UTF-8">
+      <title>Win On Soccer</title>
+	  <script src="https://unpkg.com/ag-grid-community/dist/ag-grid-community.min.noStyle.js"></script>
+	  <link rel="stylesheet" href="https://unpkg.com/ag-grid-community/dist/styles/ag-grid.css">
+      <link rel="stylesheet" href="https://unpkg.com/ag-grid-community/dist/styles/ag-theme-balham.css">
+      <link rel = "stylesheet" href = "./bower_components/bootstrap/dist/css/bootstrap.min.css" />
+   </head>
+   
+   <body>
+      <div class = "container" id = "mode_selection_area">
+         <button class = "btn btn-success" id = "current_button">Current</button>
+		 <button class = "btn btn-success" id = "history_button">History</button>
+      </div>
+	  
+	  <div class = "container" id = "controllers_area">
+		<button class = "btn btn-success" id = "ctrl_export_btn">Export</button>
+		<select id="togle_display_columns" ng-model="userType" class="form-control" multiple="multiple">
+		</select>
+	  </div>
+	  
+	  <div id = "grid_area" style = "width : 1000px; height: 600px;" class="ag-theme-balham-dark">
+		<script src = "./loadGrid.js" ></script>
+	  </div>
+	  
+	 <script src = "./view.js" ></script>
+   </body>
+</html>
